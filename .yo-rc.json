@@ -1,8 +1,8 @@
 {
   "generator-jhipster": {
     "applicationType": "microservice",
-    "baseName": "itemsapp",
-    "jhipsterVersion": "7.2.0",
+    "baseName": "itemcrud",
+    "jhipsterVersion": "7.3.0",
     "skipClient": true,
     "withAdminUi": false,
     "skipUserManagement": true,
@@ -16,14 +16,14 @@
     "blueprints": [],
     "otherModules": [],
     "pages": [],
-    "creationTimestamp": 1632089144672,
+    "creationTimestamp": 1633842748138,
     "serviceDiscoveryType": "eureka",
     "reactive": false,
     "authenticationType": "jwt",
-    "packageName": "joao.tcc.item.app",
+    "packageName": "joao.tcc.ms.app",
     "serverPort": "8081",
-    "cacheProvider": "hazelcast",
-    "enableHibernateCache": true,
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
     "databaseType": "sql",
     "devDatabaseType": "h2Disk",
     "prodDatabaseType": "mysql",
@@ -35,10 +35,8 @@
     "enableSwaggerCodegen": false,
     "enableTranslation": false,
     "nativeLanguage": "en",
-    "jwtSecretKey": "OTM1ZDk0MmU4NWZkZjBjZjNjOGMxYzYzYTkyZjY3OWMwMDRhMmRlOTUzZTMxMDlmNTgwYTRiNzhmNDExYTBkODE0OTAwZTM4NjdmNzUwMzY1ODY3YTUzMGQ2NTFjYjFhY2MzYTljMjE4YWVlMmE1ZWFmNDNjYmM0N2I4ODYyOGM=",
+    "jwtSecretKey": "NDUxZDU4YjIzM2FjNjAzODZjYTFjNjZmYmEyMzllMjU5MDA5MTMzMjM4YmQxNzg2NWM3N2YwMzJhYWM3MmIzM2E4OTk0Mzc3MDJmNGNlMzk3OGM5MDJmZDIwOTc2MTk3YTZkNzA2NjYwOGRmMzIwOTFjZTk5ZDk3ZWNlNmI3MWQ=",
     "enableGradleEnterprise": false,
-    "languages": ["en", "fr"],
-    "lastLiquibaseTimestamp": 1632090309000,
-    "entities": ["Item"]
+    "languages": ["en", "fr"]
   }
 }

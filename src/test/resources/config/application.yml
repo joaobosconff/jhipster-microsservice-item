@@ -17,21 +17,21 @@ eureka:
   client:
     enabled: false
   instance:
-    appname: itemsapp
-    instanceId: itemsapp:${spring.application.instance-id:${random.value}}
+    appname: itemcrud
+    instanceId: itemcrud:${spring.application.instance-id:${random.value}}
 
 spring:
   profiles:
     # Uncomment the following line to enable tests against production database type rather than H2, using Testcontainers
     #active: testcontainers
   application:
-    name: itemsapp
+    name: itemcrud
   cloud:
     config:
       enabled: false
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:mem:itemsapp;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:mem:itemcrud;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     name:
     username:
     password:
@@ -67,13 +67,13 @@ spring:
     basename: i18n/messages
   task:
     execution:
-      thread-name-prefix: itemsapp-task-
+      thread-name-prefix: itemcrud-task-
       pool:
         core-size: 1
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: itemsapp-scheduling-
+      thread-name-prefix: itemcrud-scheduling-
       pool:
         size: 1
   thymeleaf:
@@ -91,7 +91,7 @@ server:
 
 jhipster:
   clientApp:
-    name: 'itemsappApp'
+    name: 'itemcrudApp'
   logging:
     # To test json console appender
     use-json-format: false
@@ -104,7 +104,7 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 (you can type `echo 'secret-key'|base64` on your command line)
-        base64-secret: OTM1ZDk0MmU4NWZkZjBjZjNjOGMxYzYzYTkyZjY3OWMwMDRhMmRlOTUzZTMxMDlmNTgwYTRiNzhmNDExYTBkODE0OTAwZTM4NjdmNzUwMzY1ODY3YTUzMGQ2NTFjYjFhY2MzYTljMjE4YWVlMmE1ZWFmNDNjYmM0N2I4ODYyOGM=
+        base64-secret: NDUxZDU4YjIzM2FjNjAzODZjYTFjNjZmYmEyMzllMjU5MDA5MTMzMjM4YmQxNzg2NWM3N2YwMzJhYWM3MmIzM2E4OTk0Mzc3MDJmNGNlMzk3OGM5MDJmZDIwOTc2MTk3YTZkNzA2NjYwOGRmMzIwOTFjZTk5ZDk3ZWNlNmI3MWQ=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
 # ===================================================================
