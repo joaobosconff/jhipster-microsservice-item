@@ -35,7 +35,7 @@
     "enableSwaggerCodegen": false,
     "enableTranslation": false,
     "nativeLanguage": "en",
-    "jwtSecretKey": "YWEyNjg2NTUwZmIzZGIwNDAyMTNiMDJlNDNlZTAyYzJiOTkyNWM4NzcyMzBhMGI0YTY5ZmViN2U4N2NkMWI1OGViYjE2YWExMTVjMDE3ZjRlNmM0Y2YzZjNlMjFmOWIyYWJjMmU3M2IyODk2MGIyNTFiNDRkMmRjZmVhZTY3ODY=",
+    "jwtSecretKey": "bXktc2VjcmV0LXRva2VuLXRvLWNoYW5nZS1pbi1wcm9kdWN0aW9uLWFuZC10by1rZWVwLWluLWEtc2VjdXJlLXBsYWNl",
     "enableGradleEnterprise": false,
     "languages": ["en", "fr"],
     "lastLiquibaseTimestamp": 1633844492000,
