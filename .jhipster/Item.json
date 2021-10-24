@@ -1,0 +1,21 @@
+{
+  "microserviceName": "itemcrud",
+  "clientRootFolder": "itemcrud",
+  "databaseType": "sql",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "service": "no",
+  "readOnly": false,
+  "pagination": "no",
+  "name": "Item",
+  "changelogDate": "20211024181906"
+}
